@@ -1,7 +1,5 @@
 # GitHub Supply Chain Security
-Application security is a priority for organizations that need to reduce technical debt and identify vulnerabilities earlier in the software development lifecycle. As part of a shift-left security strategy, GitHub Advanced Security provides dependency management capabilities that help teams understand, monitor, and secure third-party software used in their projects.
-
-GitHub dependency management tools help reduce the security risks and maintenance burden associated with external packages by identifying vulnerable dependencies, tracking dependency changes, and supporting compliance and audit requirements.
+Application security is a priority for organizations that need to reduce technical debt and identify vulnerabilities earlier in the software development lifecycle. As part of a shift-left security strategy, GitHub Advanced Security provides dependency management capabilities that help teams understand, monitor, and secure third-party software used in their projects. GitHub Supply Chain Security help reduce the security risks and maintenance burden associated with external packages by identifying vulnerable dependencies, tracking dependency changes, and supporting compliance and audit requirements.
 
 # GitHub Tools for Dependencies
 GitHub provides several integrated features to improve supply chain security across repositories:
