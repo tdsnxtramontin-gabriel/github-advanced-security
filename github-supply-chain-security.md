@@ -27,18 +27,18 @@ Dependabot supports three main capabilities:
 ## Dependabot Alerts
 Dependabot alerts are generated when GitHub detects that a repository depends on a package affected by a known security advisory. Alerts may be triggered by:
 
-- New advisories published in the GitHub Advisory Database
-- Changes to the dependency graph
-- Pull requests that introduce vulnerable dependencies
+- New advisories published in the GitHub Advisory Database.
+- Changes to the dependency graph.
+- Pull requests that introduce vulnerable dependencies.
 
 ### Dependabot Alert Metadata
 Dependabot alert metadata can include:
 
-- Severity rating and score
-- CVSS base metrics
-- CWE identifiers
-- CVE ID
-- GHSA ID
+- Severity rating and score.
+- CVSS base metrics.
+- CWE identifiers.
+- CVE ID.
+- GHSA ID.
 
 ## Dependabot Updates
 Dependabot provides two types of automated pull requests:
@@ -55,10 +55,10 @@ You can use dependency review to catch vulnerable dependencies before they're ad
 GitHub Actions can be used to automate dependency review during pull request workflows. This helps enforce security checks before merging code changes. It shows which dependencies were added, removed, or updated, and provides vulnerability data for these dependencies.
 
 With GitHub Actions dependency review, teams can:
-- Detect dependency changes in pull requests
-- Identify insecure or vulnerable packages before merge
-- Add automated checks to CI workflows
-- Strengthen policy enforcement for dependency security
+- Detect dependency changes in pull requests.
+- Identify insecure or vulnerable packages before merge.
+- Add automated checks to CI workflows.
+- Strengthen policy enforcement for dependency security.
 
 ## Software Bill of Materials (SBOM):
 A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of a project's dependencies and associated information (such as versions, package identifiers, and licenses). You can use it as part of your audit process and use them to comply with regulatory and legal requirements. GitHub supports exporting SBOM data through the user interface and REST API.
