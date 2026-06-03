@@ -6,32 +6,32 @@ Set policies at the repository, organization, and enterprise levels, allowing or
 
 ### Why Security Policies Matter?
 Security policies maintain your GitHub ecosystem’s integrity by:
-- **Guiding workflows:** Secure, standardized processes
-- **Reporting clarity:** Clear steps for vulnerability disclosure
-- **Access control:** Least-privilege permissions to limit risk
+- **Guiding workflows:** Secure, standardized processes.
+- **Reporting clarity:** Clear steps for vulnerability disclosure.
+- **Access control:** Least-privilege permissions to limit risk.
   
 ### Documentation and Security Settings ###
-- **Standardization:** Ensure consistent responses to common issues across the project
-- **Compliance:** Follow industry-standard practices required by regions where projects are developed and published
-- **Preventing Critical Failure:** Defend against events that threaten development, like publishing trade secrets or intellectual property
+- **Standardization:** Ensure consistent responses to common issues across the project.
+- **Compliance:** Follow industry-standard practices required by regions where projects are developed and published.
+- **Preventing Critical Failure:** Defend against events that threaten development, like publishing trade secrets or intellectual property.
   
 #### **Community Health Files**
-Create default files such as `README.md`, `SUPPORT.md`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md` to guide collaborators.
+Create default files such as `README.md`, `SUPPORT.md`, `CODE_OF_CONDUCT.md`, and `CONTRIBUTING.md` to guide collaborators:
   - `README.md`: Introduces and explains the project.
   - `SUPPORT.md`: Provides help resources.
   - `CODE_OF_CONDUCT.md`: Defines community behavior standards.
   - `CONTRIBUTING.md`: Describes contribution guidelines.
 
 #### **Security Information:**
-Record security preparation, key contacts, and project background to inform collaborators and users.
+Record security preparation, key contacts, and project background to inform collaborators and users:
   - `SECURITY.md`: Explains supported versions, how to report vulnerabilities, and legal disclaimers or known risks.
   - `GOVERNANCE.md`: Explains the project’s decision-making structure.
   - Issue/PR templates and `config.yml`: Standardize contributor input.
 
 ## Security Settings
-- **Automation:** Dependabot automates parts of the security process, including updating dependencies, and dependency review further automate security by flagging vulnerabilities
-- **Manual Interaction:** Documentation and advisories require significant manual interaction to maintain security
-- **Security Advisories:** Create advisories to privately discuss and fix security vulnerabilities
+- **Automation:** Dependabot automates parts of the security process, including updating dependencies, and dependency review further automate security by flagging vulnerabilities.
+- **Manual Interaction:** Documentation and advisories require significant manual interaction to maintain security.
+- **Security Advisories:** Create advisories to privately discuss and fix security vulnerabilities.
 
 ## Security Advisories
 GitHub Security Advisories provide a historical narrative for users that demonstrates that you understand the nature of the threat, have addressed the immediate threat, and have taken steps to prevent similar threats.
@@ -40,14 +40,14 @@ GitHub Security Advisories provide a historical narrative for users that demonst
 <br>
 
 A security advisory should include the following:
-- Product, Versions affected and Severity
-- Types of security weaknesses addressed by the project owners' actions
-- Impact, status of patched and workarounds
+- Product, Versions affected and Severity.
+- Types of security weaknesses addressed by the project owners' actions.
+- Impact, status of patched and workarounds.
 
 ## Repository Rulesets
-Repository rulesets are named lists of rules that control how collaborators interact with specific branches and tags in a repository
-- Govern actions such as pushing commits, deleting tags, or renaming tags, providing fine-grained control
-- Support up to 75 rulesets per repository
+Repository rulesets are named lists of rules that control how collaborators interact with specific branches and tags in a repository:
+- Govern actions such as pushing commits, deleting tags, or renaming tags, providing fine-grained control.
+- Support up to 75 rulesets per repository.
 
 ### Comparing Rulesets, Branch Protection and Protected Tags
 - **Integration:** Work alongside branch and tag protection rules without overriding existing protections.
