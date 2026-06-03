@@ -9,19 +9,19 @@ GitHub Advanced Security (GHAS) plays a crucial role in enhancing the security p
 
 ## Software Development Cycle
 
-**1. Basic Security Scenario:**
+**01. Basic Security Scenario:**
 
-<< Basic Approach.png >>
+![](./images/basic-approach.png)
 
 - Traditional Approach: Security tests are conducted during the quality-assurance phase, often causing delays.
 - Bottleneck: Security becomes a bottleneck, hindering the timely release of Software.
 - Shift Left: The goal is to integrate security earlier in the development process to avoid these delays.
 
-**02. GitHub Advanced Security Scenario:**
+<br>**02. GitHub Advanced Security Scenario:**
 
 In this scenario, security is set up right from the beginning through security policies at the project configuration stage:
 
-<< GHAS Approach.png >>
+![](./images/GHAS-approach.png)
 
 - Code scanning: Scan at every commit and merge for potential vulnerabilities and coding errors.
 - Secret scanning: Scan for tokens and private keys that were accidentally committed.
