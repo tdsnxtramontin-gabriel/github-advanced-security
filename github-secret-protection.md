@@ -1,53 +1,69 @@
 # GitHub Secret Protection
-GitHub Secret Protection is designed to detect and prevent secrets from being exposed throughout the development lifecycle. In application security, a secret is any sensitive credential or confidential value that grants access to systems, services, or data. Examples include API keys, tokens, passwords, and cloud credentials. Secret Protection helps organizations reduce the risk of accidental exposure before secrets are committed, pushed, or left undiscovered in repository history.
+GitHub Secret Protection helps organizations detect, prevent, and remediate exposed secrets across the software development lifecycle. In application security, a secret is any sensitive credential or confidential value that grants access to systems, services, or data, such as API keys, access tokens, passwords, and cloud credentials. GitHub Secret Protection also includes supporting features that improve governance, response, and detection coverage. From a Business perspective, Secret Protection reduces the risk of security incidents caused by accidental credential exposure. From a Technical perspective, it provides automated detection, prevention, and response workflows directly within the developer experience.
 
 ## What is Secret Scanning?
-Secret scanning is a GitHub Advanced Security feature that scans repositories for known types of secrets. It prevents the fraudulent use of secrets that were committed accidentally. Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the repository's Security tab. GitHub also notifies the service provider who issued the secret if they're partnered with GitHub.
+Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the repository's Security tab. GitHub also notifies the service provider who issued the secret if they're partnered with GitHub.
 
-Secret scanning scan the following:
-- Descriptions and comments in issues.
-- Titles, descriptions, and comments, in open and closed historical issues.
-- Titles, descriptions, and comments in pull requests.
-- Tittle, descriptions, and comments in GitHub Discussions.
+### **Coverage**
+Secret scanning can detect secrets in:
+- **Commits and repository history**
+- **Issues**: titles, descriptions, and comments
+- **Pull requests**: titles, descriptions, and comments
+- **GitHub Discussions**: titles, descriptions, and comments
 
-**Secret Scanning Availability:**
-- Public Repositories: Enabled by default and cannot be turned off. Alerts are available for free.
-- Private Repositories: Requires manual enabling and a GitHub Advanced Security license for secret scanning.
-
-**Enabling Secret Scanning:**
-- Repository Level: Navigate to Settings > Code security and analysis, enable GitHub Advanced Security, Secret Scanning, and Push Protection.
-- Organization Level: Enable GitHub Advanced Security and Secret Scanning for all private repositories, with options for automatic enabling on new repositories.
+### **Availability**
+- **Public Repositories:** Enabled by default and cannot be turned off. Alerts are available for free.
+- **Private Repositories:** Requires manual enabling and a GitHub Advanced Security license for secret scanning.
 
 ## What is Push Protection?
-Push Protection helps stop secrets before they are committed to the codebase. It detects exposed secrets during the push process and alerts developers immediately, allowing them to remove or remediate the issue before merge.
+Push Protection stops supported secrets before they are pushed to the repository, prompting contributors to remove or bypass detected secrets before it becomes part of the codebase or commit history
+- **Default settings:** Enabled by default for public projects to prevent accidental secret leaks.
+- **User Experience:** Provides remediation guidance directly in the IDE or command-line interface.
 
-- Scans for identifiable secrets before they are pushed, prompting contributors to remove or bypass detected secrets.
-- Default settings: Enabled by default for public projects to prevent accidental secret leaks.
-- User Experience: Provides remediation guidance directly in the IDE or command-line interface.
+### **Enablement**
+![](./images/secret-scanning.png)
+- **Repository Level:** Navigate to Settings > Code security and analysis, enable GitHub Advanced Security, Secret Scanning, and Push Protection.
+- **Organization Level:** Enable GitHub Advanced Security and Secret Scanning for all private repositories, with options for automatic enabling on new repositories.
+  
+## **Key Features**
 
-## What is Custom Patterns?
-- Purpose: Organizations can define custom secret scanning patterns for company-specific or internally defined secrets.
-- Scope: Supports up to 500 custom patterns per organization or enterprise account, and up to 100 per private repository.
-- Scanning: Scans the entire Git history on all branches and alerts administrators.
+**Validity Check**
+<br> GitHub can validate whether a detected secret is still active, helping teams prioritize real exposure and reduce false positives. <br>
+- Improves triage efficiency and focuses remediation efforts on active threats
+- Supports faster, risk-based incident response
 
-## What is Validity Check?
-GitHub can validate whether a detected secret is still active, helping teams prioritize real exposure and reduce false positives.
-- Determine if a token is still active or was ever active, aiding in remediation decisions.
-- Use Case: Prioritize remediating active secrets and checking security logs for unauthorized access.
-- Helps streamline the process of managing exposed credentials effectively.
-
-## Other Features
-**Delegated Bypass**
-If a developer believes a push should proceed despite a detected secret, a bypass request can be submitted for review. Delegated bypass enables designated reviewers to approve or reject that exception, improving control and accountability.
 
 **Remediation Guidance**
-For committed secrets that have already been exposed, GitHub provides context and guidance to help teams revoke, rotate, and resolve the issue efficiently.
+<br> Provides guidance on what to do after a secret is exposed. <br>
+- Supports faster response and cleanup
+- Improves consistency in incident handling
+
 
 **Copilot-powered Detection for Generic Passwords**
-Some secrets, especially unstructured or generic passwords, are difficult to identify using traditional pattern matching. GitHub uses AI-powered detection to improve coverage for these secret types without requiring a separate GitHub Copilot license.
+<br> Uses AI-powered detection to identify hard-to-detect credentials <br>
+- Extends detection beyond structured secret formats
+- Does not require a separate GitHub Copilot license for this capability
 
+
+**Custom Patterns**
+<br> Allow organizations to define their own secret-detection patterns for proprietary or company-specific credentials not covered by GitHub’s default detectors.
+- Supports up to 500 custom patterns per organization/enterprise account, and up to 100 per private repository.
+- Enables better alignment with internal security policies
+
+  
 **Partner Program**
-GitHub scans public repositories for partner token formats used by cloud and service providers. When a supported partner secret is found, GitHub can notify the provider so the credential can be revoked quickly.
+<br> When GitHub detects supported partner tokens in public repositories, it can notify the secret provider directly.
+- Strengthens ecosystem-level response
+- Reduces the exposure window
+
 
 **Secret Risk Assessment**
-Secret Risk Assessment provides a free scan to help customers evaluate the extent of secret exposure across repositories and better understand current risk.
+<br> Provides a free assessment to help organizations understand the scope of secret exposure across repositories.
+- Helps identify current risk levels to support prioritization and planning
+- Useful as an entry point for security maturity discussions
+
+
+**Delegated Bypass**
+<br> Allows developers to request an exception when a push is blocked, with approval routed to designated reviewers.
+- Adds control and accountability to bypass decisions
+- Supports governance and creates an auditable exception workflow
