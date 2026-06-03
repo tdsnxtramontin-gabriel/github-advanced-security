@@ -25,7 +25,7 @@ In this scenario, security is set up right from the beginning through security p
 
 - Code scanning: Scan at every commit and merge for potential vulnerabilities and coding errors.
 - Secret scanning: Scan for tokens and private keys that were accidentally committed.
-- Dependency review: Tracks project dependency changes and checks for known vulnerabilities in every pull request.
+- Dependency review: Tracks dependency changes and checks for known vulnerabilities in every pull request.
 
 ## Define GHAS features
 
