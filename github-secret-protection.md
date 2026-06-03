@@ -2,7 +2,8 @@
 GitHub Secret Protection helps organizations detect, prevent, and remediate exposed secrets across the software development lifecycle. In application security, a secret is any sensitive credential or confidential value that grants access to systems, services, or data, such as API keys, access tokens, passwords, and cloud credentials. GitHub Secret Protection also includes supporting features that improve governance, response, and detection coverage. From a Business perspective, Secret Protection reduces the risk of security incidents caused by accidental credential exposure. From a Technical perspective, it provides automated detection, prevention, and response workflows directly within the developer experience.
 
 ## What is Secret Scanning?
-Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the repository's Security tab. GitHub also notifies the service provider who issued the secret if they're partnered with GitHub.
+Secret scanning automatically scans your entire Git history on all branches present in your GitHub repository for any secrets. When a secret with a known pattern is committed into a private or public repository in your project, secret scanning sends a notification to all repository administrators about the commit that contains the secret. Repository administrators can then view the list of all detected secrets in the repository's Security tab. GitHub also notifies the service provider who issued the secret if they're partnered with GitHub.  
+<br>
 
 ### **Coverage**  
 Secret scanning can detect secrets in:
@@ -14,14 +15,16 @@ Secret scanning can detect secrets in:
 ### **Availability**
 - **Public Repositories:** Enabled by default and cannot be turned off. Alerts are available for free.
 - **Private Repositories:** Requires manual enabling and a GitHub Advanced Security license for secret scanning.
+<br>
 
-### Reviewing Secret Scanning Alerts:
+### **Secret Scanning Alerts**
 - **Filtering:** Sort alerts by source, provider, type, and more to determine specific attributes.
 - **Attributes:** Filter by bypassed, validity, secret type, and provider.
 
-### Responding to an Alert:
+### **Alert Response**
 - **Compromised Secrets:** Treat committed secrets as compromised and take appropriate actions, such as deleting and recreating tokens.
 - **Resolving Alerts:** After addressing the secret, resolve the alert by selecting a reason in the Close as drop-down.
+<br>
 
 ## What is Push Protection?
 Push Protection stops supported secrets before they are pushed to the repository, prompting contributors to remove or bypass detected secrets before it becomes part of the codebase or commit history
