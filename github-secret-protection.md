@@ -15,11 +15,11 @@ Secret scanning can detect secrets in:
 - **Public Repositories:** Enabled by default and cannot be turned off. Alerts are available for free.
 - **Private Repositories:** Requires manual enabling and a GitHub Advanced Security license for secret scanning.
 
-## Reviewing Secret Scanning Alerts:
+### Reviewing Secret Scanning Alerts:
 - **Filtering:** Sort alerts by source, provider, type, and more to determine specific attributes.
 - **Attributes:** Filter by bypassed, validity, secret type, and provider.
 
-## Responding to an Alert:
+### Responding to an Alert:
 - **Compromised Secrets:** Treat committed secrets as compromised and take appropriate actions, such as deleting and recreating tokens.
 - **Resolving Alerts:** After addressing the secret, resolve the alert by selecting a reason in the Close as drop-down.
 
