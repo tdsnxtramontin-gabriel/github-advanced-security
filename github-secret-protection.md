@@ -7,10 +7,11 @@ Secret scanning automatically scans your entire Git history on all branches pres
 
 ### **Coverage**  
 Secret scanning can detect secrets in:
-- **Commits and repository history**
-- **Issues**: titles, descriptions, and comments
-- **Pull requests**: titles, descriptions, and comments
-- **GitHub Discussions**: titles, descriptions, and comments
+- **Commits and repository history.**
+- **Issues**: titles, descriptions, and comments.
+- **Pull requests**: titles, descriptions, and comments.
+- **GitHub Discussions**: titles, descriptions, and comments.
+<br>
 
 ### **Availability**
 - **Public Repositories:** Enabled by default and cannot be turned off. Alerts are available for free.
@@ -27,7 +28,7 @@ Secret scanning can detect secrets in:
 <br>
 
 ## What is Push Protection?
-Push Protection stops supported secrets before they are pushed to the repository, prompting contributors to remove or bypass detected secrets before it becomes part of the codebase or commit history
+Push Protection stops supported secrets before they are pushed to the repository, prompting contributors to remove or bypass detected secrets before it becomes part of the codebase or commit history.
 - **Default settings:** Enabled by default for public projects to prevent accidental secret leaks.
 - **User Experience:** Provides remediation guidance directly in the IDE or command-line interface.
 
@@ -39,41 +40,41 @@ Push Protection stops supported secrets before they are pushed to the repository
 
 **Validity Check**  
 GitHub can validate whether a detected secret is still active, helping teams prioritize real exposure and reduce false positives. <br>
-- Improves triage efficiency and focuses remediation efforts on active threats
-- Supports faster, risk-based incident response
+- Improves triage efficiency and focuses remediation efforts on active threats.
+- Supports faster, risk-based incident response.
 <br>
 
 **Remediation Guidance**  
 Provides guidance on what to do after a secret is exposed. <br>
-- Supports faster response and cleanup
-- Improves consistency in incident handling
+- Supports faster response and cleanup.
+- Improves consistency in incident handling.
 <br>
 
 **Copilot-powered Detection for Generic Passwords**  
-Uses AI-powered detection to identify hard-to-detect credentials <br>
-- Extends detection beyond structured secret formats
-- Does not require a separate GitHub Copilot license for this capability
+Uses AI-powered detection to identify hard-to-detect credentials. <br>
+- Extends detection beyond structured secret formats.
+- Does not require a separate GitHub Copilot license for this capability.
 <br>
 
 **Custom Patterns**  
 Allow organizations to define their own secret-detection patterns for proprietary or company-specific credentials not covered by GitHub’s default detectors.
 - Supports up to 500 custom patterns per organization/enterprise account, and up to 100 per private repository.
-- Enables better alignment with internal security policies
+- Enables better alignment with internal security policies.
 <br>
 
 **Partner Program**  
 When GitHub detects supported partner tokens in public repositories, it can notify the secret provider directly.
-- Strengthens ecosystem-level response
-- Reduces the exposure window
+- Strengthens ecosystem-level response.
+- Reduces the exposure window.
 <br>
 
 **Secret Risk Assessment**  
 Provides a free assessment to help organizations understand the scope of secret exposure across repositories.
-- Helps identify current risk levels to support prioritization and planning
-- Useful as an entry point for security maturity discussions
+- Helps identify current risk levels to support prioritization and planning.
+- Useful as an entry point for security maturity discussions.
 <br>
 
 **Delegated Bypass**  
 Allows developers to request an exception when a push is blocked, with approval routed to designated reviewers.
-- Adds control and accountability to bypass decisions
-- Supports governance and creates an auditable exception workflow
+- Adds control and accountability to bypass decisions.
+- Supports governance and creates an auditable exception workflow.
