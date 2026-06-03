@@ -28,6 +28,7 @@ In this scenario, security is set up right from the beginning through security p
 - Dependency review: Tracks dependency changes and checks for known vulnerabilities in every pull request.
 
 ## Define GHAS features
+GitHub’s security features collectively helped developers and security teams work together to maintain a secure and compliant codebase.
 
 **Secret Scanning:**
 - Identifies and mitigates exposure of sensitive information like API keys and tokens.
@@ -45,9 +46,15 @@ In this scenario, security is set up right from the beginning through security p
 - Dependency Review to check for vulnerable dependencies within a pull request before merging.
 
 
-# GitHub Secret Protection
-
 # GitHub Code Security
+
+
+
+
+
+# GitHub Supply Chain Security
+
+
 
 # GitHub Advanced Security Administration 
 
