@@ -17,6 +17,8 @@ The GitHub Advisory Database is a security vulnerability database inclusive of C
 It contains detailed information about vulnerabilities, including description, severity, and affected package, using CVSS for severity levels, poviding a free, open-source repository of security advisories and enables community contributions.
 
 ## Dependabot:
+Dependabot helps organizations identify vulnerable dependencies before they introduce risk into production environments. It is integrated into the pull request workflow, giving developers visibility into dependency-related issues before code is merged. Dependabot also simplifies remediation by linking to vulnerability intelligence and recommending safer package versions where available. Another important capability is auto-triage, which helps teams automatically classify and prioritize dependency alerts based on predefined policies. This reduces manual effort and helps security teams focus on the most important vulnerabilities across repositories. It is also worth noting that Dependabot is included in GitHub Enterprise plans at no additional cost.
+
 Dependabot automates dependency security and maintenance workflows in GitHub repositories. It relies on the dependency graph and the GitHub Advisory Database to identify known vulnerable dependencies and recommend secure versions. For Dependabot alerts and updates to work correctly, the dependency graph must be enabled for the repository.
 
 Dependabot supports three main capabilities:
@@ -62,6 +64,12 @@ With GitHub Actions dependency review, teams can:
 
 ## Software Bill of Materials (SBOM):
 A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of a project's dependencies and associated information (such as versions, package identifiers, and licenses). You can use it as part of your audit process and use them to comply with regulatory and legal requirements. GitHub supports exporting SBOM data through the user interface and REST API.
+
+## Exploit Prediction Scoring System (EPSS):
+Dependabot alerts can include EPSS data from FIRST, the Forum of Incident Response and Security Teams. EPSS helps organizations prioritize remediation by estimating the likelihood that a vulnerability will be exploited in the next 30 days. The score is presented together with a percentile ranking, giving teams additional context for risk-based decision-making.
+
+## Multi-Repository Variant Analysis (MRVA):
+Multi-Repository Variant Analysis helps security teams identify similar vulnerability patterns across multiple repositories at once. When a new class of vulnerability is discovered, MRVA can be used to quickly locate related instances across the organization’s codebase, even when the implementation differs between projects. This supports faster incident response and helps uncover broader, systemic issues.
 
 ## Glossary
 - **Common Vulnerability Scoring System (CVSS):** A standardized framework used to measure the severity of a security vulnerability. 
