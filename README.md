@@ -38,6 +38,9 @@ This allows teams to:
 - Strengthen software supply chain security
 - Support security and compliance at scale
 
+## SAST vs SCA
+Static Application Security Testing (SAST) focuses on identifying vulnerabilities in first-party code before an application is deployed. Software Composition Analysis (SCA) focuses on risks introduced through dependencies, including open-source packages and third-party components. Since a large share of modern applications relies on open source, both areas are essential to securing the software supply chain. In practical terms, GitHub Code Security helps customers assess both the code they write and the external components they rely on. GitHub’s SAST capability is powered by CodeQL, while dependency and supply chain risk detection is supported through Dependabot.
+
 ## Define GHAS features
 GitHub’s security features collectively helped developers and security teams work together to maintain a secure and compliant codebase.
 
