@@ -9,8 +9,8 @@ Security policies maintain your GitHub ecosystem’s integrity by:
 - **Guiding workflows:** Secure, standardized processes.
 - **Reporting clarity:** Clear steps for vulnerability disclosure.
 - **Access control:** Least-privilege permissions to limit risk.
-  
-### Documentation and Security Settings ###
+
+### Documentation and Security Settings
 - **Standardization:** Ensure consistent responses to common issues across the project.
 - **Compliance:** Follow industry-standard practices required by regions where projects are developed and published.
 - **Preventing Critical Failure:** Defend against events that threaten development, like publishing trade secrets or intellectual property.
@@ -61,6 +61,9 @@ Repository rulesets are named lists of rules that control how collaborators inte
 ### Managing a Ruleset
 - **Editing:** Go to Settings > Code and Automation > Rules > Rulesets, select the ruleset, make changes and save.
 - **Monitoring:** View active rulesets targeting specific branches or tags to understand restrictions.
+
+## **Customizable Security Policies**
+Customizable security policies allow organizations to define how security controls are applied across repositories. Teams can establish which checks are mandatory, which findings should block pull requests, and which severity thresholds should trigger alerts or notifications. These policies can be applied at repository, team, or organization level, helping enforce consistency while still allowing flexibility when needed.
 
 ## GHAS Alerts
 GHAS provides a comprehensive set of tools for visibility into an organization’s security posture and enables effective prioritization and management of security risks.
